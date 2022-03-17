@@ -10,9 +10,9 @@ html {
 }
 
 :root{
-    --marrom-escuro: #773a0eb7;
-    --marrom-claro: #030302a2;
-    --marrom-maisclaro:#DEB887;
+    --marrom-escuro: #532728;
+    --marrom-claro: #f3ddb6;
+    --marrom-maisclaro:#d6bf93;
 
 }
 
@@ -92,5 +92,34 @@ header{
     gap: 25px;
 }
 
+/*fim do header-descktop*/
 
+/*Estilização do footer*/
 
+footer{
+    grid-row: 3/-1;
+    height: 100%;
+   background-color: var(--marrom-maisclaro);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 50px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    height: 100%;
+
+}
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    font-size: 5rem;
+    color: var(--marrom-escuro);
+}
+.footer-texto{
+    font-size: 2rem;
+}
