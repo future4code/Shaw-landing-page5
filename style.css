@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -91,14 +90,62 @@ header{
     justify-content: flex-end;
     gap: 25px;
 }
-
 /*fim do header-descktop*/
+/* =================================== */
+/* início do header mobile */
+/* container principal */
+.nav-mobile{
+    display:none;
+    height: 100%;
+    padding: 20px;
+}
+.nav-mobile a{
+    height: 100%;
+}
+#logo-mobile{
+    height: 90%;
+    border-radius: 50%;
+}
+/* nav sem apresentar os itens de navegação */
+.mobile-before{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.mobile-before i{
+    /* display: none; */
+    color: var(--marrom-maisclaro);
+    font-size: 4rem;
+    cursor:pointer;
+}
+.mobile-items{
+    display: none;
+    background-color: var(--marrom-escuro);
+    padding: 10px;
+    /* transition-delay: 250ms; */
+}
+.mobile-items a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;  
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    /* border: 0.5px solid; */
+}
 
+
+/* main */
+main{
+    min-height: 70vh;
+}
 /*Estilização do footer*/
 
 footer{
     grid-row: 3/-1;
     height: 100%;
+    width: 100%;
    background-color: var(--marrom-maisclaro);
    display: flex;
    align-items: center;
@@ -122,4 +169,41 @@ footer{
 }
 .footer-texto{
     font-size: 2rem;
+}
+/* media do site */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .nav-desktop{
+        display: none;
+    }
+    .nav-mobile{
+       display: flex;
+        
+    }
+    
+    .icone-menu:hover .mobile-items{
+        color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:15vh;
+        left: 0px;
+        width: 100%;
+        /* transition-delay: 250ms; */
+        
+    }
+    
+    .footer-texto{
+        font-size: 1rem;
+    }
+    footer{
+        gap:20px;
+        padding: 30px;
+    }
+    .social-media i {
+        font-size: 2rem;
+    }
+
 }
