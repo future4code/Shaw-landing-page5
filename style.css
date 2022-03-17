@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -43,9 +42,14 @@ header{
     padding: 5px 20px;
 }
   
+    
+
+
 .nav-desktop a:hover{
     color:var(--marrom-claro);
 }
+
+
 
 .nav-esq{
     display: flex;
@@ -54,6 +58,7 @@ header{
     width: 60%;
     height: 100%;
     gap: 25px;
+
 }
 
 .nav-esq a{
@@ -66,10 +71,11 @@ header{
     color:white;
 }
 
-.logo{
+#logo{
     height: 90%;
     border-radius: 50%;
 }
+
 
 .nav-dir a{
     text-decoration: none;
@@ -95,6 +101,10 @@ header{
 }
 .nav-mobile a{
     height: 100%;
+}
+#logo-mobile{
+    height: 90%;
+    border-radius: 50%;
 }
 /* nav sem apresentar os itens de navegação */
 .mobile-before{
@@ -135,12 +145,11 @@ main{
 footer{
     grid-row: 3/-1;
     height: 100%;
-    background-color: var(--marrom-maisclaro);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 50px;
-    font-size: 1.2rem;
+   background-color: var(--marrom-maisclaro);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0px 50px;
 }
 .social-media{
     display: flex;
