@@ -150,14 +150,15 @@ header{
 
 /* main */
 main{
+    grid-row: 2/3;
     min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--fundo-pag);
-    gap:50px;
-    padding: 30px;
+    gap:20px;
+    padding: 20px;
 }
 /* estilização texto da main  */
 .main-frase{
@@ -350,7 +351,7 @@ h2{
 
 footer{
     grid-row: 3/-1;
-    height: 15vh;
+    height: 100%;
     width: 100%;
     background-color: var(--marrom-maisclaro);
     display: flex;
