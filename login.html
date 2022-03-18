@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <title>4Food</title>
+    <title>Login</title>
 </head>
-
 <body>
     <div class="container-mae">
         <header>
@@ -50,52 +48,22 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="main-frase">
-                <h1 id="main-text-title">
-                    Tudo para facilitar o seu dia a dia
+        <main id="main-login">
+            <div class="main-login-container">
+            <div class="main-titulo">
+                <h1 id="main-frase-login">
+                   Faça seu login aqui
                 </h1>
-                <p id="main-texto-menor">
-                    O que você precisa está aqui. Peça e receba onde estiver.
-                </p>
             </div>
-            <div class="main-localiza">
-                <div class="main-localiza-input">
-                    <i class="material-icons" id="icon-local">location_on</i>
-                    <input id="search-input" type="search" placeholder="Endereço de entrega e número">
-                </div>
-                <button id="search-button">Buscar</button>
+            <i class="material-icons" id="icone-login">account_circle</i>
+            <div class="main-caixa-login">
+                <label for="e-mail">E-mail</label>
+                <input name="e-mail" type="text" placeholder="Insira seu e-mail">
+                <label for="senha">Senha</label>
+                <input name="senha" type="text" placeholder="Insira sua senha">
             </div>
-            <div class="main-cards-options">
-                <a class="card-option" href="">
-                    <h1 class="card-title">
-                        Restaurante
-                    </h1>
-                    <div class="card-content">
-                        <button class="card-button">
-                            Ver opções <span>
-                                <i class="material-icons">chevron_right</i>
-                            </span>
-                        </button>
-                        <img class="main-img" src="./img/main-img/restaurante.png" alt="imagem de um hambúrguer">
-                    </div>
-                </a>
-
-                <a class="card-option" href="">
-                    <h1 class="card-title">
-                        Mercado
-                    </h1>
-                    <div class="card-content">
-                        <button class="card-button">
-                            Ver opções <span>
-                                <i class="material-icons">chevron_right</i>
-                            </span>
-                        </button>
-                        <img class="main-img" src="./img/main-img/mercado.png" alt="imagem de carrinho de compras">
-                    </div>
-
-                </a>
-            </div>
+            <button id="button-login">Entrar</button>
+        </div>
         </main>
         <footer>
             <div class="footer-texto">
@@ -119,5 +87,4 @@
         </footer>
     </div>
 </body>
-
 </html>

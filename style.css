@@ -371,3 +371,59 @@ footer{
     }
 
 }
+/* Estilização da pagina de login*/
+
+#main-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.main-login-container{
+    background-color: white;
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-caixa-login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-caixa-login input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-bottom: 1px solid var(--marrom-escuro);
+}
+
+.main-caixa-login label{
+    font-size: 1.4rem;
+    color: var(--marrom-escuro);
+}
+
+#main-frase-login{
+    color: var(--marrom-escuro);
+}
+#icone-login{
+    font-size: 5rem;
+    color: var(--marrom-escuro);
+}
+
+#button-login{
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: var(--marrom-maisclaro);
+    color: var(--marrom-escuro);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
