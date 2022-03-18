@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--marrom-maisclaro)
+}
+*::-webkit-scrollbar-track {
+    background: var(--fundo-pag)
+}
+
 html {
     font-size: 10px;
 }
@@ -247,6 +258,93 @@ main{
 .main-img{
     width: 40%;
 }
+
+/* Estilização Lista */
+
+/* Restaurantes */
+
+    .restaurantes{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 90%;
+        /* margin: 30px 0; */
+
+    }
+
+     h2{
+        font-size: 2.1rem;
+    } 
+
+    .container{
+        display: flex;
+        overflow: auto;
+        flex: none;
+        flex-flow: row nowrap;
+        gap: 15px;
+        width: 100%;
+        padding: 5px;
+    
+
+    }
+
+    .container > a {
+        scroll-snap-align: center;
+        flex: none;
+        text-decoration: none;
+        text-align: center;    
+    }
+
+    .mandatory-scroll-snapping{
+        scroll-snap-type: x mandatory;
+    }
+
+    .card-lista{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        border-radius: 5px;
+        width: 24%;
+        border: 1px solid darkgrey;
+        box-shadow: 2px 2px 2px var(--marrom-escuro);
+        padding: 10px; 
+    }
+
+    .card-conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: var(--marrom-escuro);
+
+    }
+
+    .card-nome{
+        font-size: 1.4rem;
+    }
+
+    .card-conteudo p{
+        font-size: 1.2rem;
+    }
+
+    .logo-lista{
+        border-radius: 50%;
+    }
+
+/*Mercados*/
+
+.mercados{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    /* margin: 30px 0; */
+
+}
+
+
+
 /*Estilização do footer*/
 
 footer{
@@ -358,6 +456,9 @@ footer{
     .main-img{
         height: 40px;
     }
+
+  
+
     /* estilo footer  */
     .footer-texto{
         font-size: 1rem;
