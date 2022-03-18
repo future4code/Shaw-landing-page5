@@ -12,6 +12,7 @@ html {
     --marrom-escuro: #532728;
     --marrom-claro: #f3ddb6;
     --marrom-maisclaro:#d6bf93;
+    --fundo-pag:#d6bf932f;
 
 }
 
@@ -139,6 +140,112 @@ header{
 /* main */
 main{
     min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fundo-pag);
+    gap:20px;
+    padding: 20px;
+}
+/* estilização texto da main  */
+.main-frase{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#main-text-title{
+    font-size: 3rem;
+}
+#main-texto-menor{
+    font-size: 1.7rem;
+    color: rgb(77, 74, 74);
+}
+/* estilização da busca pela localização  */
+.main-localiza{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    
+}
+.main-localiza-input{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px -2px darkgray
+    
+}
+#search-input{
+    width: 98%;
+    padding: 5px;
+    font-size:1.5rem;
+    border: none;
+    outline: none;
+}
+#icon-local{
+    font-size: 1.8rem;
+    color: var(--marrom-escuro);
+}
+#search-button{
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--marrom-escuro);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* estilização dos cards de mercado e restaurante  */
+.main-cards-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+}
+.card-option{
+    width: 45%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px darkgray;
+    text-decoration: none;
+}
+.card-title{
+    font-size: 2.8rem;
+    color: var(--marrom-escuro);
+    font-weight: bold;
+}
+.card-content{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-button{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--marrom-maisclaro);
+    border-radius: 5px;
+    opacity: 60%;
+    padding: 5px;
+    cursor: pointer;
+}
+.main-img{
+    width: 40%;
 }
 /*Estilização do footer*/
 
@@ -195,6 +302,63 @@ footer{
         
     }
     
+    /* estilo texto main  */
+    #main-text-title{
+        font-size: 1.8rem;
+    }
+    #main-texto-menor{
+        font-size: 1.1rem;
+    }
+    /* estilo busca  */
+    .main-localiza{
+        width: 90%;
+    }
+    .main-localiza-input{
+       gap:5px;
+    }
+    #search-input{
+        font-size: 1rem;
+    }
+    #icon-local{
+        font-size: 1.4rem;
+    }
+    #search-button{
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+    /* estilizaação dos cards main  */
+    .main-cards-options{
+        width: 90%;
+    }
+    .card-option{
+        width: 45%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px darkgray;
+        text-decoration: none;
+    }
+    .card-title{
+        font-size: 1.2rem;
+    }
+    .card-content{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .card-button{
+        width: 40px;
+        font-size: 0.5rem;
+        font-weight: bold;
+        padding: 4px;
+    }
+    .card-button span i{
+        font-size: 0.5rem;
+    }
+    .main-img{
+        height: 40px;
+    }
+    /* estilo footer  */
     .footer-texto{
         font-size: 1rem;
     }
