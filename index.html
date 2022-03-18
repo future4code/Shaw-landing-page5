@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>4Food</title>
 </head>
@@ -50,7 +51,51 @@
             </nav>
         </header>
         <main>
-            
+            <div class="main-frase">
+                <h1 id="main-text-title">
+                    Tudo para facilitar o seu dia a dia
+                </h1>
+                <p id="main-texto-menor">
+                    O que você precisa está aqui. Peça e receba onde estiver.
+                </p>
+            </div>
+            <div class="main-localiza">
+                <div class="main-localiza-input">
+                    <i class="material-icons" id="icon-local">location_on</i>
+                    <input id="search-input" type="search" placeholder="Endereço de entrega e número">
+                </div>
+                <button id="search-button">Buscar</button>
+            </div>
+            <div class="main-cards-options">
+                <a class="card-option" href="">
+                    <h1 class="card-title">
+                        Restaurante
+                    </h1>
+                    <div class="card-content">
+                        <button class="card-button">
+                            Ver opções <span>
+                                <i class="material-icons">chevron_right</i>
+                            </span>
+                        </button>
+                        <img class="main-img" src="./img/main-img/restaurante.png" alt="imagem de um hambúrguer">
+                    </div>
+                </a>
+
+                <a class="card-option" href="">
+                    <h1 class="card-title">
+                        Mercado
+                    </h1>
+                    <div class="card-content">
+                        <button class="card-button">
+                            Ver opções <span>
+                                <i class="material-icons">chevron_right</i>
+                            </span>
+                        </button>
+                        <img class="main-img" src="./img/main-img/mercado.png" alt="imagem de carrinho de compras">
+                    </div>
+
+                </a>
+            </div>
         </main>
         <footer>
             <div class="footer-texto">
@@ -59,7 +104,7 @@
             </div>
             <div class="social-media">
                 <a href="www.facebook.com.br">
-                    <i class='fab fa-facebook'></i>
+                    <i class="fa fa-facebook-square"></i>
                 </a>
                 <a href="www.whatsapp.com.br">
                     <i class="fa fa-whatsapp"></i>
