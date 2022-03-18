@@ -156,8 +156,8 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: var(--fundo-pag);
-    gap:20px;
-    padding: 20px;
+    gap:50px;
+    padding: 30px;
 }
 /* estilização texto da main  */
 .main-frase{
@@ -263,75 +263,78 @@ main{
 
 /* Restaurantes */
 
-    .restaurantes{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        width: 90%;
-        /* margin: 30px 0; */
+.restaurantes{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    /* margin: 30px 0; */
 
-    }
+}
 
-     h2{
-        font-size: 2.1rem;
-    } 
+h2{
+    font-size: 2.1rem;
+} 
 
-    .container{
-        display: flex;
-        overflow: auto;
-        flex: none;
-        flex-flow: row nowrap;
-        gap: 15px;
-        width: 100%;
-        padding: 5px;
-    
+.container{
+    display: flex;
+    overflow: auto;
+    flex: none;
+    flex-flow: row nowrap;
+    gap: 15px;
+    width: 100%;
+    padding: 5px;
+}
 
-    }
+.container > a {
+    scroll-snap-align: center;
+    flex: none;
+    text-decoration: none;
+    text-align: center;    
+}
 
-    .container > a {
-        scroll-snap-align: center;
-        flex: none;
-        text-decoration: none;
-        text-align: center;    
-    }
+.mandatory-scroll-snapping{
+    scroll-snap-type: x mandatory;
+}
 
-    .mandatory-scroll-snapping{
-        scroll-snap-type: x mandatory;
-    }
+.card-lista{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 24%;
+    border: 1px solid darkgrey;
+    box-shadow: 2px 2px 2px var(--marrom-escuro);
+    padding: 10px; 
+}
 
-    .card-lista{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background-color: white;
-        border-radius: 5px;
-        width: 24%;
-        border: 1px solid darkgrey;
-        box-shadow: 2px 2px 2px var(--marrom-escuro);
-        padding: 10px; 
-    }
+.card-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--marrom-escuro);
 
-    .card-conteudo{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        color: var(--marrom-escuro);
+}
 
-    }
+.card-nome{
+    font-size: 1.4rem;
+}
 
-    .card-nome{
-        font-size: 1.4rem;
-    }
+.card-conteudo p{
+    font-size: 1.2rem;
+}
 
-    .card-conteudo p{
-        font-size: 1.2rem;
-    }
-
-    .logo-lista{
-        border-radius: 50%;
-    }
-
+.logo-lista{
+    border-radius: 50%;
+}
+.promotions{
+    width: 90%;
+}
+.promotion-img{
+    width: 32.5%;
+}
 /*Mercados*/
 
 .mercados{
@@ -343,19 +346,17 @@ main{
 
 }
 
-
-
 /*Estilização do footer*/
 
 footer{
     grid-row: 3/-1;
-    height: 100%;
+    height: 15vh;
     width: 100%;
-   background-color: var(--marrom-maisclaro);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 0px 50px;
+    background-color: var(--marrom-maisclaro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
 }
 .social-media{
     display: flex;
@@ -375,6 +376,65 @@ footer{
 .footer-texto{
     font-size: 2rem;
 }
+/* Estilização da pagina de login*/
+
+#main-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.main-login-container{
+    background-color: white;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10PX;
+}
+
+.main-caixa-login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-caixa-login input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-bottom: 1px solid var(--marrom-escuro);
+}
+
+.main-caixa-login label{
+    font-size: 1.4rem;
+    color: var(--marrom-escuro);
+}
+
+#main-frase-login{
+    color: var(--marrom-escuro);
+}
+#icone-login{
+    font-size: 5rem;
+    color: var(--marrom-escuro);
+}
+
+#button-login{
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: var(--marrom-maisclaro);
+    color: var(--marrom-escuro);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* estilização pagina de cadastro */
+
 /* media do site */
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px){
@@ -457,8 +517,38 @@ footer{
         height: 40px;
     }
 
-  
-
+   /* estilização melhores restaurante  */
+    .container{
+        gap: 10px;
+        padding: 5px;
+        max-width: 90vw;
+    }
+    .card-lista{
+        gap: 10px;
+        width: 48%;
+        padding: 10px;
+    }
+    .logo-lista{
+        width: 50%;
+        gap:10px;
+        padding: 10px;
+    }
+    .texto-lista{
+        font-size: 1.2rem;
+    }
+    .card-nome{
+        font-size: 0.8rem;
+    }
+    .card-conteudo p{
+        font-size: 0.8rem;
+    }
+    /* estilização promoçoes do dia  */
+    #promotions-title{
+        font-size: 1.2rem;
+    }
+    .promotion-img{
+        width: 60%;
+    }
     /* estilo footer  */
     .footer-texto{
         font-size: 1rem;
@@ -470,61 +560,10 @@ footer{
     .social-media i {
         font-size: 2rem;
     }
+    /* estilização pagina login  */
+    .main-login-container{
+        width: 80%;
+    }
 
-}
-/* Estilização da pagina de login*/
-
-#main-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.main-login-container{
-    background-color: white;
-    height: 70%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.main-caixa-login{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.main-caixa-login input{
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-bottom: 1px solid var(--marrom-escuro);
-}
-
-.main-caixa-login label{
-    font-size: 1.4rem;
-    color: var(--marrom-escuro);
-}
-
-#main-frase-login{
-    color: var(--marrom-escuro);
-}
-#icone-login{
-    font-size: 5rem;
-    color: var(--marrom-escuro);
-}
-
-#button-login{
-    border: none;
-    outline: none;
-    padding: 8px;
-    background-color: var(--marrom-maisclaro);
-    color: var(--marrom-escuro);
-    border-radius: 5px;
-    font-weight: bold;
 }
 
