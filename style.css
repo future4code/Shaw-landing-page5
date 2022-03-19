@@ -385,11 +385,12 @@ footer{
     justify-content: center;
     height: 100%;
     width: 100%;
+    padding: 10px;
 }
 .main-login-container{
     background-color: white;
-    height: 70%;
-    width: 30%;
+    height: 90%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,7 +402,8 @@ footer{
 .main-caixa-login{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:10px;
+    width: 70%;
 }
 
 .main-caixa-login input{
@@ -412,12 +414,13 @@ footer{
 }
 
 .main-caixa-login label{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: var(--marrom-escuro);
 }
 
 #main-frase-login{
     color: var(--marrom-escuro);
+    font-size: 2rem;
 }
 #icone-login{
     font-size: 5rem;
@@ -427,15 +430,92 @@ footer{
 #button-login{
     border: none;
     outline: none;
-    padding: 8px;
+    padding: 10px 15px;
     background-color: var(--marrom-maisclaro);
     color: var(--marrom-escuro);
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1.6rem;
+}
+.login-options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+.login-options a{
+    color: var(--marrom-escuro);
+}
+.conecta{
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
 /* estilização pagina de cadastro */
-
+#main-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.cadastro-container{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+}
+.cadastro-container h1{
+    color: var(--marrom-escuro);
+    margin-bottom: 30px;
+}
+.cadastro{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    gap:10px
+}
+.cadastro label{
+    font-size: 1.4rem;
+    color: var(--marrom-escuro);
+    font-weight: bold;
+}
+.cadastro input{
+    border: none;
+    outline: none;
+    height: 8%;
+    padding: 5px;
+    font-size: 1.4rem;
+    box-shadow: 2px 2px 2px var(--marrom-escuro);
+}
+.button-con{
+    height: 20%;
+}
+#button-cadastrar{
+    padding: 15px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--marrom-maisclaro);
+    color: var(--marrom-escuro);
+    font-weight: bold;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px 2px var(--marrom-escuro);
+}
+#button-cadastrar:hover{
+    background-color: var(--marrom-escuro);
+    color: var(--marrom-maisclaro);
+    box-shadow: 2px 2px 2px darkgray;
+}
 /* media do site */
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px){
@@ -564,6 +644,39 @@ footer{
     /* estilização pagina login  */
     .main-login-container{
         width: 80%;
+        gap: 10px;
+    }
+    .main-caixa-login{
+        gap: 10px;
+    }
+    .login-options{
+        font-size: 1.1rem;
+        margin: 10px;
+    }
+    #main-frase-login{
+        font-size: 1.7rem;
+    }
+    .main-caixa-login label{
+        font-size: 1.5rem;
+    }
+    #button-login{
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+  
+    /* estilização pagina cadastro  */
+    .cadastro-container{
+        width: 90%;
+        height: 60vh;
+        padding: 8px 20px ;
+    }
+    .cadastro-container h1{
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+    #button-cadastrar{
+        font-size: 1.2rem;
+        padding: 10px;
     }
 
 }
