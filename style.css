@@ -343,6 +343,121 @@ main{
 
 }
 
+/* pagina Quem somos */
+
+
+.main-quem-somos {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 3% 15%;
+    color: var(--marrom-escuro);
+    font-size: 2.3rem;
+}
+
+.container-quem-somos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 0px 2px var(--marrom-escuro);
+
+}
+
+
+.texto-sobre-nos{
+    padding: 3% 0%;
+    display: flex;
+    flex-direction:column;
+    align-items: center ;
+    width: 90%;
+
+
+}
+
+.texto-sobre-nos>h1{
+    padding: 3%;
+    font-size: 4.3rem;
+    display:flex;
+    align-self:center;
+
+}
+.container-quem-somos > img{
+    display: flex;
+    align-self:flex-end;
+
+    border-radius: 50%;
+    width: 40%;
+    padding: 3% 0%;
+}
+
+.texto-nosso-compromisso{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 2.1rem;
+    padding: 0 0 5% 0;
+    box-shadow: 0px 2px var(--marrom-escuro);
+
+}
+
+.texto-nosso-compromisso>h1{
+    padding: 2%;
+    font-size: 3.1rem;
+    display:flex;
+    align-self:center;
+}
+
+#titulo-team{
+    font-size: 3.4rem;
+    display:flex;
+    align-self:flex-start;
+}
+
+
+
+
+
+.container-nosso-team{
+    display: flex;
+    overflow: auto;
+    flex: none;
+    flex-flow: row nowrap;
+    gap: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+/* .container-nosso-team > a {
+    scroll-snap-align: center;
+    flex: none;
+    text-decoration: none;
+    text-align: center;    
+} */
+
+
+/* .card-team{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    width: 34%;
+    border: 1px solid darkgrey;
+    box-shadow: 2px 2px 2px var(--marrom-escuro);
+    padding: 10px; 
+} */
+
+
+.foto {
+    width: 60%;
+    border-radius: 50%;
+}
 
 
 /*Estilização do footer*/
@@ -457,7 +572,50 @@ footer{
         height: 40px;
     }
 
-  
+    /* estilo pagina quem somos */
+
+    .texto-sobre-nos>h1{
+        font-size: 2.1rem;
+    }
+
+    .container-quem-somos{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        align-items: center;
+        box-shadow: 2px 2px 2px var(--marrom-escuro);
+
+    }
+
+    .container-quem-somos > img{
+        display: flex;
+        align-self:center;
+        border-radius: 50%;
+        width: 12vh;
+        padding: 3% 0%;
+        
+    }
+
+    .texto-nosso-compromisso>h1{
+        font-size: 2rem;
+
+    }
+
+    .texto-nosso-compromisso{
+        font-size: 1.5rem;
+        box-shadow: 2px 2px 2px var(--marrom-escuro);
+
+    }
+
+
+    #titulo-team{
+        font-size: 2rem;
+
+    }
+
+    #texto-nosso-team{
+        font-size: 1.5rem;
+    }
 
     /* estilo footer  */
     .footer-texto{
