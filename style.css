@@ -1,9 +1,13 @@
+/* ================================  */
+/* Estilização do projeto 4food  */
+/* ================================  */
+/* Estilo geral do site  */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
 }
-
 *::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -14,11 +18,9 @@
 *::-webkit-scrollbar-track {
     background: var(--fundo-pag)
 }
-
 html {
     font-size: 10px;
 }
-
 :root{
     --marrom-escuro: #532728;
     --marrom-claro: #f3ddb6;
@@ -26,25 +28,20 @@ html {
     --fundo-pag:#d6bf932f;
 
 }
-
 .container-mae {
     display: grid;
     grid-template-rows: 15vh 1fr 15vh;
     width: 100vw;
-    
 }
-
+/* =========================  */
 /* Estilização do header */
-
+/* =========================  */
 header{
     grid-row: 1/2;
     background-color: var(--marrom-escuro);
     height: 100%;
     width: 100%;
-    /* position: fixed;
-    top: 0; */
 }
-
 .nav-desktop{
     height: 100%;
     width: 100%;
@@ -53,16 +50,9 @@ header{
     align-items: center;
     padding: 5px 20px;
 }
-  
-    
-
-
 .nav-desktop a:hover{
     color:var(--marrom-claro);
 }
-
-
-
 .nav-esq{
     display: flex;
     justify-content: flex-start;
@@ -70,9 +60,7 @@ header{
     width: 60%;
     height: 100%;
     gap: 25px;
-
 }
-
 .nav-esq a{
     display: flex;
     align-items: center;
@@ -82,29 +70,25 @@ header{
     font-weight: bold;
     color:white;
 }
-
 #logo{
     height: 90%;
     border-radius: 50%;
 }
-
-
 .nav-dir a{
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
     color:white;
 }
-
 .nav-dir{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 25px;
 }
-/*fim do header-descktop*/
 /* =================================== */
 /* início do header mobile */
+/* ========================================= */
 /* container principal */
 .nav-mobile{
     display:none;
@@ -126,7 +110,6 @@ header{
     width: 100%;
 }
 .mobile-before i{
-    /* display: none; */
     color: var(--marrom-maisclaro);
     font-size: 4rem;
     cursor:pointer;
@@ -135,7 +118,6 @@ header{
     display: none;
     background-color: var(--marrom-escuro);
     padding: 10px;
-    /* transition-delay: 250ms; */
 }
 .mobile-items a{
     text-decoration: none;
@@ -144,11 +126,10 @@ header{
     padding: 5px;
     width: 100%;
     text-align: center;
-    /* border: 0.5px solid; */
 }
-
-
+/* ========================================= */
 /* main */
+/* ========================================= */
 main{
     grid-row: 2/3;
     min-height: 70vh;
@@ -167,7 +148,6 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 #main-text-title{
     font-size: 3rem;
@@ -182,8 +162,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
-    
+    gap:20px; 
 }
 .main-localiza-input{
     width: 80%;
@@ -193,8 +172,7 @@ main{
     background-color: white;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px -2px darkgray
-    
+    box-shadow: 2px 2px 2px -2px darkgray 
 }
 #search-input{
     width: 98%;
@@ -218,7 +196,9 @@ main{
     font-size: 1.5rem;
     padding: 10px;
 }
+/* ========================================= */
 /* estilização dos cards de mercado e restaurante  */
+/* ========================================= */
 .main-cards-options{
     display: flex;
     align-items: center;
@@ -259,11 +239,10 @@ main{
 .main-img{
     width: 40%;
 }
-
+/* ========================================= */
 /* Estilização Lista */
-
+/* ========================================= */
 /* Restaurantes */
-
 .restaurantes{
     display: flex;
     justify-content: flex-start;
@@ -272,11 +251,9 @@ main{
     /* margin: 30px 0; */
 
 }
-
 h2{
     font-size: 2.1rem;
 } 
-
 .container{
     display: flex;
     overflow: auto;
@@ -286,18 +263,15 @@ h2{
     width: 100%;
     padding: 5px;
 }
-
 .container > a {
     scroll-snap-align: center;
     flex: none;
     text-decoration: none;
     text-align: center;    
 }
-
 .mandatory-scroll-snapping{
     scroll-snap-type: x mandatory;
 }
-
 .card-lista{
     display: flex;
     align-items: center;
@@ -309,24 +283,19 @@ h2{
     box-shadow: 2px 2px 2px var(--marrom-escuro);
     padding: 10px; 
 }
-
 .card-conteudo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     color: var(--marrom-escuro);
-
 }
-
 .card-nome{
     font-size: 1.4rem;
 }
-
 .card-conteudo p{
     font-size: 1.2rem;
 }
-
 .logo-lista{
     border-radius: 50%;
 }
@@ -337,100 +306,41 @@ h2{
     width: 32.5%;
 }
 /*Mercados*/
-
 .mercados{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     width: 90%;
-    /* margin: 30px 0; */
-
 }
-
-/* pagina Quem somos */
-
-
-.main-quem-somos {
-    width: 100%;
+/* ========================================= */
+/*Estilização do footer*/
+/* ========================================= */
+footer{
+    grid-row: 3/-1;
     height: 100%;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 3% 15%;
-    color: var(--marrom-escuro);
-    font-size: 2.3rem;
-}
-
-.container-quem-somos{
     width: 100%;
+    background-color: var(--marrom-maisclaro);
     display: flex;
     align-items: center;
-    padding: 2px;
-    box-shadow: 0px 2px var(--marrom-escuro);
-
+    justify-content: space-between;
+    padding: 0px 50px;
 }
-
-
-.texto-sobre-nos{
-    padding: 3% 0%;
+.social-media{
     display: flex;
-    flex-direction:column;
-    align-items: center ;
-    width: 90%;
-
-
-}
-
-.texto-sobre-nos>h1{
-    padding: 3%;
-    font-size: 4.3rem;
-    display:flex;
-    align-self:center;
-
-}
-.container-quem-somos > img{
-    display: flex;
-    align-self:flex-end;
-
-    border-radius: 50%;
-    width: 40%;
-    padding: 3% 0%;
-}
-
-.texto-nosso-compromisso{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     align-items: center;
-    font-size: 2.1rem;
-    padding: 0 0 5% 0;
-    box-shadow: 0px 2px var(--marrom-escuro);
-
-}
-.texto-nosso-compromisso>h1{
-    padding: 2%;
-    font-size: 3.1rem;
-    display:flex;
-    align-self:center;
-}
-#titulo-team{
-    font-size: 3.4rem;
-    display:flex;
-    align-self:flex-start;
-}
-.container-nosso-team{
-    display: flex;
-    overflow: auto;
-    flex: none;
-    flex-flow: row nowrap;
+    justify-content: flex-end;
     gap: 15px;
-    width: 100%;
-    padding: 5px;
+    height: 100%;
 }
-.foto {
-    width: 60%;
-    border-radius: 50%;
+.social-media a{
+    text-decoration: none;
+}
+.social-media i{
+    font-size: 5rem;
+    color: var(--marrom-escuro);
+}
+.footer-texto{
+    font-size: 2rem;
 }
 /* ========================================= */
 /* estilização pagina de cadastro de lojas  */
@@ -461,7 +371,6 @@ h2{
     background-color: var(--marrom-escuro);
     width: 30%;
     cursor: pointer;
-
 }
 .card-cadastro:hover{
     box-shadow: 2px 4px 22px 7px var(--marrom-escuro);
@@ -567,39 +476,94 @@ h2{
 #btnControl:checked+label #cadastro-loja{
     display: flex;
 }
-
-/*Estilização do footer*/
-
-footer{
-    grid-row: 3/-1;
-    height: 100%;
+/* =======================================  */
+/* estilização pagina quem somos  */
+/* ==========================================  */
+.main-quem-somos {
     width: 100%;
-    background-color: var(--marrom-maisclaro);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 50px;
-}
-.social-media{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
     height: 100%;
-
-}
-.social-media a{
-    text-decoration: none;
-}
-.social-media i{
-    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 3% 15%;
     color: var(--marrom-escuro);
+    font-size: 2.3rem;
+    text-align: justify;
 }
-.footer-texto{
-    font-size: 2rem;
+.container-quem-somos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-shadow: 0px 2px var(--marrom-escuro);
+    gap: 60px;
 }
-/* Estilização da pagina de login*/
+.texto-sobre-nos{
+    padding: 3% 0%;
+    display: flex;
+    flex-direction:column;
+    align-items: center ;
+    width: 90%;
+}
+.texto-sobre-nos>h1{
+    padding: 3%;
+    font-size: 4.3rem;
+    display:flex;
+    align-self:center;
 
+}
+.container-quem-somos > img{
+    display: flex;
+    align-self:flex-end;
+    border-radius: 50%;
+    width: 40%;
+    padding: 3% 0%;
+    margin: auto;
+}
+.texto-nosso-compromisso{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 2.1rem;
+    padding: 0 0 5% 0;
+    box-shadow: 0px 2px var(--marrom-escuro);
+
+}
+.texto-nosso-compromisso>h1{
+    padding: 2%;
+    font-size: 3.1rem;
+    display:flex;
+    align-self:center;
+}
+#titulo-team{
+    font-size: 3.4rem;
+    display:flex;
+    align-self:flex-start;
+}
+.container-nosso-team{
+    display: flex;
+    overflow: auto;
+    flex: none;
+    flex-flow: row nowrap;
+    gap: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+.foto {
+    width: 50%;
+    border-radius: 50%;
+}
+.quem-somos-card{
+    width: 35%;
+}
+/* ========================================= */
+/* Estilização da pagina de login*/
+/* ========================================= */
 #main-login{
     display: flex;
     align-items: center;
@@ -619,21 +583,18 @@ footer{
     gap: 20px;
     border-radius: 10PX;
 }
-
 .main-caixa-login{
     display: flex;
     flex-direction: column;
     gap:10px;
     width: 70%;
 }
-
 .main-caixa-login input{
     border: none;
     outline: none;
     padding: 5px;
     border-bottom: 1px solid var(--marrom-escuro);
 }
-
 .main-caixa-login label{
     font-size: 1.7rem;
     color: var(--marrom-escuro);
@@ -647,7 +608,6 @@ footer{
     font-size: 5rem;
     color: var(--marrom-escuro);
 }
-
 #button-login{
     border: none;
     outline: none;
@@ -673,8 +633,9 @@ footer{
     align-items: center;
     gap: 2px;
 }
-
+/* ========================================= */
 /* estilização pagina de cadastro */
+/* ========================================= */
 #main-cadastro{
     display: flex;
     align-items: center;
@@ -737,17 +698,23 @@ footer{
     color: var(--marrom-maisclaro);
     box-shadow: 2px 2px 2px darkgray;
 }
+/* ========================================= */
 /* media do site */
-
+/* ========================================= */
 @media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    *::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    /* ===================  */
+    /* estilo da navBar  */
+    /* ===================  */
     .nav-desktop{
         display: none;
     }
     .nav-mobile{
-       display: flex;
-        
+       display: flex; 
     }
-    
     .icone-menu:hover .mobile-items{
         color:black;
         display: flex;
@@ -757,19 +724,20 @@ footer{
         position: absolute;
         top:15vh;
         left: 0px;
-        width: 100%;
-        /* transition-delay: 250ms; */
-        
+        width: 100%;  
     }
-    
+    /* ===================  */
     /* estilo texto main  */
+    /* ===================  */
     #main-text-title{
         font-size: 1.8rem;
     }
     #main-texto-menor{
         font-size: 1.1rem;
     }
+    /* ===================  */
     /* estilo busca  */
+    /* ===================  */
     .main-localiza{
         width: 90%;
     }
@@ -786,7 +754,9 @@ footer{
         font-size: 1.1rem;
         padding: 8px;
     }
+    /* ===================  */
     /* estilizaação dos cards main  */
+    /* ===================  */
     .main-cards-options{
         width: 90%;
     }
@@ -818,54 +788,9 @@ footer{
     .main-img{
         height: 40px;
     }
-
-    /* estilo pagina quem somos */
-
-    .texto-sobre-nos>h1{
-        font-size: 2.1rem;
-    }
-
-    .container-quem-somos{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.5rem;
-        align-items: center;
-        box-shadow: 2px 2px 2px var(--marrom-escuro);
-
-    }
-
-    .container-quem-somos > img{
-        display: flex;
-        align-self:center;
-        border-radius: 50%;
-        width: 12vh;
-        padding: 3% 0%;
-        
-    }
-
-    .texto-nosso-compromisso>h1{
-        font-size: 2rem;
-
-    }
-
-    .texto-nosso-compromisso{
-        font-size: 1.5rem;
-        box-shadow: 2px 2px 2px var(--marrom-escuro);
-
-    }
-
-
-    #titulo-team{
-        font-size: 2rem;
-
-    }
-
-    #texto-nosso-team{
-        font-size: 1.5rem;
-    }
-
-
-   /* estilização melhores restaurante  */
+    /* ===================  */
+    /* estilização melhores restaurante  */
+    /* ===================  */
     .container{
         gap: 10px;
         padding: 5px;
@@ -890,6 +815,7 @@ footer{
     .card-conteudo p{
         font-size: 0.8rem;
     }
+    /* ===================  */
     /* estilização promoçoes do dia  */
     #promotions-title{
         font-size: 1.2rem;
@@ -897,8 +823,9 @@ footer{
     .promotion-img{
         width: 60%;
     }
-
+    /* ===================  */
     /* estilo footer  */
+    /* ===================  */
     .footer-texto{
         font-size: 1rem;
     }
@@ -909,7 +836,105 @@ footer{
     .social-media i {
         font-size: 2rem;
     }
+    /* ================================  */
+    /* estilo pagina quem somos */
+    /* ================================ */
+    .texto-sobre-nos>h1{
+        font-size: 1.4rem;
+    }
+    .container-quem-somos{
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.1rem;
+        align-items: center;
+        gap: 10px;
+    }
+    .container-quem-somos > img{
+        width: 40%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .texto-nosso-compromisso>h1{
+        font-size: 1.4rem;
+
+    }
+    .texto-nosso-compromisso{
+        font-size: 1.1rem;
+        /* box-shadow: 2px 2px 2px var(--marrom-escuro); */
+        padding: 5px;
+    }
+    .quem-somos-card{
+        width: 70%;
+    }
+
+    #titulo-team{
+        font-size: 1.4rem;
+
+    }
+
+    #texto-nosso-team{
+        font-size: 1.1rem;
+    }
+    /* ===================  */
+    /* estilização pag cadastro de lojas  */
+    /* ===================  */
+    #big-title{
+        font-size: 2rem;
+    }
+
+    .img-content{
+        gap: 10px;
+    }
+    .card-cadastro{
+        width: 45%;
+    }
+    .body-card{
+        padding: 5px;
+    }
+    .body-card>i{
+        font-size: 1.2rem;
+    }
+    .body-card-text{
+        gap: 10px;
+    }
+    .icon-card{
+        width: 30px;
+        height: 30px;
+    }
+    .icon-card i{
+        font-size: 2rem;
+    }
+    .card-text-content{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .not-bold{
+        font-weight: 100;
+    }
+    /* estilização pop up do cadastro  */
+    #cadastro-loja{
+        width: 80vw;
+        height: 60%;
+        gap: 20px;
+    }
+    #cadatro-title{
+        font-size: 2rem;
+    }
+    #text-cadastro-loja{
+        font-size: 1rem;
+    }
+    .label-cadastro{
+        font-size: 1.3rem;
+    }
+    .input-list{
+        font-size: 1.1rem;
+    }
+    .popup-btn{
+        font-size: 1.2rem;
+    }
+    /* ===================  */
     /* estilização pagina login  */
+    /* ===================  */
     .main-login-container{
         width: 80%;
         gap: 10px;
@@ -918,6 +943,8 @@ footer{
         gap: 10px;
     }
     .login-options{
+        flex-direction: column;
+        gap: 5px;
         font-size: 1.1rem;
         margin: 10px;
     }
@@ -931,8 +958,9 @@ footer{
         font-size: 1.5rem;
         padding: 5px 10px;
     }
-  
+    /* ===================  */
     /* estilização pagina cadastro  */
+    /* ===================  */
     .cadastro-container{
         width: 90%;
         height: 60vh;
@@ -948,4 +976,3 @@ footer{
     }
 
 }
-
